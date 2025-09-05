@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab1</title>
+  <title>Lab1_Nanzheng's Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #fff; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; }
+    header h1 { margin: 0; font-size: 1.5rem; display: inline-block; }
+    nav { float: right; }
+    nav a { margin-left: 1rem; text-decoration: none; color: #333; font-weight: bold; }
+    nav a:hover { color: #0077cc; }
+    section { padding: 3rem 2rem; max-width: 900px; margin: auto; }
+    section h2 { margin-bottom: 1rem; }
+    .about img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    .projects, .resume { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    footer { background: #eee; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
 </head>
 <body>
-  <!-- your code goes here -->
+  <header>
+    <h1>Nanzheng's Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Nanzheng Profile Photo" />
+    <p>
+      I am a Senior Cybersecurity & Data Consultant with a passion for building 
+      data-driven solutions and securing critical infrastructure. Experienced 
+      in strategy, product management, and innovation across sustainability 
+      and technology domains.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Phishing Email Classifier</h3>
+        <p>VSTO plugin for Outlook to detect phishing emails, compute scores, and add warning banners.</p>
+      </div>
+      <div class="card">
+        <h3>Stock Analysis Dashboard</h3>
+        <p>Interactive Python dashboard using Dash/Plotly for tracking US, SGX, and HK stocks.</p>
+      </div>
+      <div class="card">
+        <h3>Water Sector Threat Report</h3>
+        <p>Quarterly board-level cyber threat reports and mitigation strategies for critical infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume Highlights</h2>
+    <ul>
+      <li>Senior Cybersecurity Analyst, Public Utilities Board, Singapore</li>
+      <li>Led insider threat detection program and OT/IT policy integration</li>
+      <li>Developed award-winning sludge prediction algorithm saving S$750,000 annually</li>
+      <li>Led international delegations and cybersecurity collaborations</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nanzheng@example.com">nanzheng@example.com</a></p>
+    <p><a href="https://www.linkedin.com/in/nanzheng-xie" target="_blank">LinkedIn</a> | 
+       <a href="https://github.com/xienanzheng" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    © 2025 Nanzheng. All rights reserved.
+  </footer>
+
 </body>
 </html>
